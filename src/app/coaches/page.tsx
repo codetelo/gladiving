@@ -17,26 +17,6 @@ const coachingStaff = [
     image: "/coaches/deana-sotelo.jpg"
   },
   {
-    name: "Tom Huynh",
-    role: "Team Coach",
-    description: "Specialized in coaching our competitive team divers, Tom brings technical expertise and competitive experience to help athletes reach their highest potential.",
-    responsibilities: ["Competitive team training", "Technical skill development", "Competition preparation", "Performance analysis"],
-    icon: Star,
-    color: "bg-navy text-gold",
-    experience: "Team Coach",
-    image: "/coaches/tom-huynh.jpg"
-  },
-  {
-    name: "Haley Bunnell",
-    role: "Pre Team Coach/High School Coach",
-    description: "Haley specializes in developing divers transitioning from lessons to competitive diving, and preparing high school athletes for their season.",
-    responsibilities: ["Pre-team development", "High school preparation", "Skill progression", "Season planning"],
-    icon: Target,
-    color: "bg-gold text-navy",
-    experience: "Pre Team & High School",
-    image: "/coaches/haley-bunnell.jpg"
-  },
-  {
     name: "Caitlin Johnson",
     role: "Mini Gladiators Coach/Lessons",
     description: "Caitlin works with our youngest divers and beginners, building strong foundations and fostering a love for the sport from the ground up.",

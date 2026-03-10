@@ -25,6 +25,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://gladiving.com'),
+  icons: {
+    icon: '/gladiving-logo.png',
+    apple: '/gladiving-logo.png',
+  },
   alternates: {
     canonical: '/',
   },

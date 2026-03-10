@@ -95,8 +95,6 @@ The website uses a custom navy and gold color scheme defined in CSS variables:
 ## Coaching Staff
 
 - **Deana Sotelo**: Owner/Head Coach
-- **Tom Huynh**: Team Coach
-- **Haley Bunnell**: Pre Team/High School Coach
 - **Caitlin Johnson**: Mini Gladiators/Lessons Coach
 - **Brandon Johnson**: Lessons Coach
 
