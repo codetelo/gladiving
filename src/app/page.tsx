@@ -20,7 +20,7 @@ export default function HomePage() {
             "alternateName": "GLAD",
             "description": "Professional diving instruction and competitive teams in Indiana. Training divers from beginners to national competitors in springboard and platform diving.",
             "url": "https://gladiving.com",
-            "logo": "https://gladiving.com/logo.png",
+            "logo": "https://gladiving.com/gladiving-logo.png",
             "sameAs": [
               "https://www.facebook.com/gladiving",
               "https://www.instagram.com/gladiving"
@@ -230,7 +230,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700">
             <p className="text-gray-400">
-              © 2024 GLAD Diving. All rights reserved.
+              © 2025 GLAD Diving. All rights reserved.
             </p>
           </div>
         </div>

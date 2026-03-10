@@ -206,7 +206,7 @@ export default function GroupsPage() {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700">
             <p className="text-gray-400">
-              © 2024 GLAD Diving. All rights reserved.
+              © 2025 GLAD Diving. All rights reserved.
             </p>
           </div>
         </div>

@@ -321,7 +321,7 @@ export default function CalendarPage() {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700">
             <p className="text-gray-400">
-              © 2024 Greater Lafayette Area Diving. All rights reserved.
+              © 2025 Greater Lafayette Area Diving. All rights reserved.
             </p>
           </div>
         </div>
