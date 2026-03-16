@@ -97,7 +97,7 @@ The website uses a custom navy and gold color scheme defined in CSS variables:
 - **Deana Sotelo**: Owner/Head Coach
 - **Caitlin Johnson**: Mini Gladiators/Lessons Coach
 - **Brandon Johnson**: Lessons Coach
-- **Jen Dekker**: Coach
+- **Jen Dekker**: High School Coach
 
 ## High School Results
 
