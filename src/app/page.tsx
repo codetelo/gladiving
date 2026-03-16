@@ -15,7 +15,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "SportsOrganization",
+            "@type": ["SportsOrganization", "LocalBusiness"],
             "name": "Greater Lafayette Area Diving",
             "alternateName": "GLAD",
             "description": "Professional diving instruction and competitive teams in Indiana. Training divers from beginners to national competitors in springboard and platform diving.",

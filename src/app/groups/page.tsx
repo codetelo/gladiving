@@ -3,6 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Target, Star, Award, BookOpen } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Diving Programs - Lessons & Competitive Teams | GLAD Diving",
+  description: "Explore GLAD diving programs: 8-level lessons, Mini Gladiators, Pre-Team, and competitive teams. From beginners to national competitors in West Lafayette, Indiana.",
+  keywords: "diving lessons, diving programs, competitive diving, Pre-Team diving, Mini Gladiators, diving West Lafayette, diving Indiana",
+  alternates: { canonical: "/groups" },
+  openGraph: {
+    title: "Diving Programs - Lessons & Competitive Teams | GLAD Diving",
+    description: "Explore GLAD diving programs from beginners to national competitors in West Lafayette, Indiana.",
+    url: "https://gladiving.com/groups",
+  },
+};
 
 const divingGroups = [
   {

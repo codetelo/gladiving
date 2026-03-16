@@ -2,6 +2,19 @@ import { Navigation } from "@/components/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Trophy, Target, BookOpen } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Diving Schedule & Calendar | GLAD Diving",
+  description: "GLAD diving practice schedule, competition dates, and important events. Stay up to date with our calendar for West Lafayette area diving.",
+  keywords: "diving schedule, diving calendar, diving practice times, diving competitions Indiana, GLAD calendar",
+  alternates: { canonical: "/calendar" },
+  openGraph: {
+    title: "Diving Schedule & Calendar | GLAD Diving",
+    description: "Practice schedules, competitions, and events for Greater Lafayette Area Diving.",
+    url: "https://gladiving.com/calendar",
+  },
+};
 
 export default function CalendarPage() {
   return (

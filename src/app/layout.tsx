@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Greater Lafayette Area Diving - Excellence in Diving | GLAD",
   description: "Professional diving instruction and competitive teams in Indiana. Training divers from beginners to national competitors in springboard and platform diving. Join GLAD for diving excellence.",
-  keywords: "diving, springboard diving, platform diving, diving lessons, competitive diving, Indiana diving, Purdue diving, Greater Lafayette Area Diving, GLAD, diving coach, diving team, diving practice, diving competition, diving championships, diving lessons for kids, diving training, diving skills, diving fundamentals, diving programs, diving academy, diving school, diving instruction, diving development, diving excellence, diving champions, diving results, diving meets, diving schedule, diving calendar",
+  keywords: "diving, springboard diving, platform diving, diving lessons, competitive diving, Indiana diving, Purdue diving, Greater Lafayette Area Diving, GLAD, diving coach, diving team, high school diving, diving practice, diving competition, diving championships, diving lessons for kids, diving training, diving skills, diving fundamentals, diving programs, diving academy, diving school, diving instruction, diving development, diving excellence, diving champions, diving results, diving meets, diving schedule, diving calendar, West Lafayette diving",
   authors: [{ name: "Greater Lafayette Area Diving" }],
   creator: "Greater Lafayette Area Diving",
   publisher: "Greater Lafayette Area Diving",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'Greater Lafayette Area Diving',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/gladiving-logo.png',
         width: 1200,
         height: 630,
         alt: 'Greater Lafayette Area Diving - Diving Excellence',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Greater Lafayette Area Diving - Excellence in Diving',
     description: 'Professional diving instruction and competitive teams in Indiana.',
-    images: ['/og-image.jpg'],
+    images: ['/gladiving-logo.png'],
   },
   robots: {
     index: true,
@@ -64,11 +64,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
   },
 };
 

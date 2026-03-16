@@ -3,6 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Award, Target, Star, TrendingUp, Users, Calendar } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Diving Results & Championships | GLAD Diving",
+  description: "GLAD diving results: 39 sectional champions, 102 qualifiers, 38 state qualifiers. Celebrating our high school divers' achievements in Indiana competitions.",
+  keywords: "diving results, diving championships, high school diving Indiana, sectional diving, state diving qualifiers, GLAD results",
+  alternates: { canonical: "/results" },
+  openGraph: {
+    title: "Diving Results & Championships | GLAD Diving",
+    description: "39 sectional champions, 102 qualifiers, 38 state qualifiers. Our divers' achievements in Indiana.",
+    url: "https://gladiving.com/results",
+  },
+};
 
 const divingResults = {
   highSchool: {

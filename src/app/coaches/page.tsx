@@ -4,6 +4,20 @@ import { Badge } from "@/components/ui/badge";
 import { User, Trophy, Star, Target, BookOpen, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Meet Our Diving Coaches - GLAD West Lafayette",
+  description: "Our experienced diving coaches: Deana Sotelo, Caitlin Johnson, Brandon Johnson, and Jen Dekker. Expert instruction from lessons to high school and competitive diving in Indiana.",
+  keywords: "diving coach Indiana, diving coach West Lafayette, high school diving coach, diving lessons coach, GLAD coaches",
+  alternates: { canonical: "/coaches" },
+  openGraph: {
+    title: "Meet Our Diving Coaches - GLAD West Lafayette",
+    description: "Expert diving coaches for lessons, Mini Gladiators, high school, and competitive teams in Indiana.",
+    url: "https://gladiving.com/coaches",
+  },
+};
 
 const coachingStaff = [
   {
@@ -49,8 +63,29 @@ const coachingStaff = [
 ];
 
 export default function CoachesPage() {
+  const coachSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": coachingStaff.map((coach, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Person",
+        "name": coach.name,
+        "jobTitle": coach.role,
+        "description": coach.description,
+        "image": coach.image ? `https://gladiving.com${coach.image}` : undefined,
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <Script
+        id="coach-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(coachSchema) }}
+      />
       <Navigation />
       
       {/* Hero Section */}
