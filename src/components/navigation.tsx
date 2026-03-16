@@ -29,8 +29,8 @@ export function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
               <span className="text-gold text-2xl font-bold">
-                <span className="hidden sm:inline">Greater Lafayette Area Diving</span>
-                <span className="sm:hidden">GLAD</span>
+                <span className="hidden lg:inline">Greater Lafayette Area Diving</span>
+                <span className="lg:hidden">GLAD</span>
               </span>
             </Link>
           </div>
