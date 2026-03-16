@@ -126,8 +126,8 @@ export default function HomePage() {
                 <CardTitle className="text-4xl font-bold text-navy">102</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-xl font-semibold text-gray-700">Regional Champions</p>
-                <p className="text-gray-500 mt-2">Regional champions across Indiana</p>
+                <p className="text-xl font-semibold text-gray-700">Qualifiers</p>
+                <p className="text-gray-500 mt-2">Qualifiers across Indiana</p>
               </CardContent>
             </Card>
 

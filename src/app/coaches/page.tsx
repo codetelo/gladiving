@@ -35,6 +35,16 @@ const coachingStaff = [
     color: "bg-gold text-navy",
     experience: "Lessons Coach",
     image: "/coaches/brandon-johnson.jpg"
+  },
+  {
+    name: "Jen Dekker",
+    role: "Coach",
+    description: "Jen brings expertise and enthusiasm to our diving program, helping divers develop their skills and reach their full potential.",
+    responsibilities: ["Diving instruction", "Skill development", "Athlete support", "Program coordination"],
+    icon: Star,
+    color: "bg-navy text-gold",
+    experience: "Coach",
+    image: "/coaches/jen-dekker.JPG"
   }
 ];
 
