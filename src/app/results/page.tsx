@@ -7,12 +7,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Diving Results & Championships | GLAD Diving",
-  description: "GLAD diving results: 39 sectional champions, 102 qualifiers, 38 state qualifiers. Celebrating our high school divers' achievements in Indiana competitions.",
+  description: "GLAD diving results: 39 sectional champions, 102 regional qualifiers, 38 state qualifiers. Celebrating our high school divers' achievements in Indiana competitions.",
   keywords: "diving results, diving championships, high school diving Indiana, sectional diving, state diving qualifiers, GLAD results",
   alternates: { canonical: "/results" },
   openGraph: {
     title: "Diving Results & Championships | GLAD Diving",
-    description: "39 sectional champions, 102 qualifiers, 38 state qualifiers. Our divers' achievements in Indiana.",
+    description: "39 sectional champions, 102 regional qualifiers, 38 state qualifiers. Our divers' achievements in Indiana.",
     url: "https://gladiving.com/results",
   },
 };
@@ -79,8 +79,8 @@ export default function ResultsPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-xl font-semibold text-gray-700">Qualifiers</p>
-                <p className="text-gray-500 mt-2">Qualifiers across Indiana</p>
+                <p className="text-xl font-semibold text-gray-700">Regional Qualifiers</p>
+                <p className="text-gray-500 mt-2">Regional qualifiers across Indiana</p>
               </CardContent>
             </Card>
 

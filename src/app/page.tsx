@@ -2,6 +2,7 @@ import { Navigation } from "@/components/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
+import Image from "next/image";
 import { Trophy, Target, Award } from "lucide-react";
 import Script from "next/script";
 
@@ -75,6 +76,16 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-navy text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/logo.png"
+              alt="GLAD Diving - Greater Lafayette Area Diving logo"
+              width={120}
+              height={120}
+              priority
+              className="drop-shadow-lg"
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Excellence in <span className="text-gold">Diving</span>
           </h1>
@@ -126,8 +137,8 @@ export default function HomePage() {
                 <CardTitle className="text-4xl font-bold text-navy">102</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-xl font-semibold text-gray-700">Qualifiers</p>
-                <p className="text-gray-500 mt-2">Qualifiers across Indiana</p>
+                <p className="text-xl font-semibold text-gray-700">Regional Qualifiers</p>
+                <p className="text-gray-500 mt-2">Regional qualifiers across Indiana</p>
               </CardContent>
             </Card>
 
@@ -210,7 +221,16 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-navy text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-gold mb-4">Greater Lafayette Area Diving</h3>
+          <div className="flex justify-center items-center gap-3 mb-4">
+            <Image
+              src="/logo.png"
+              alt="GLAD Diving logo"
+              width={48}
+              height={48}
+              className="flex-shrink-0"
+            />
+            <h3 className="text-2xl font-bold text-gold">Greater Lafayette Area Diving</h3>
+          </div>
           <p className="text-gray-300 mb-6">
             Excellence in springboard diving since our founding
           </p>

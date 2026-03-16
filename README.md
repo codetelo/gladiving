@@ -102,7 +102,7 @@ The website uses a custom navy and gold color scheme defined in CSS variables:
 ## High School Results
 
 - **39 Sectional Champions**
-- **102 Qualifiers**
+- **102 Regional Qualifiers**
 - **38 State Qualifiers**
 
 ## Deployment
