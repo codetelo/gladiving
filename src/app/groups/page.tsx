@@ -93,7 +93,7 @@ export default function GroupsPage() {
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className={`w-12 h-12 rounded-full flex items-center justify-center ${group.color}`}>
+                        <div className={`w-12 h-12 shrink-0 rounded-full flex items-center justify-center ${group.color}`}>
                           <IconComponent className="w-6 h-6" />
                         </div>
                         <div>
@@ -151,7 +151,7 @@ export default function GroupsPage() {
                     <Card className="border-gold hover:shadow-lg transition-shadow w-full">
                       <CardHeader>
                         <CardTitle className="text-navy flex items-center space-x-2">
-                          <div className={`w-8 h-8 rounded-full flex items-center justify-center ${group.color}`}>
+                          <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center ${group.color}`}>
                             <span className="text-sm font-bold">{index + 1}</span>
                           </div>
                           <span>{group.name}</span>

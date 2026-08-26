@@ -111,49 +111,96 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy mb-4">High School Diving Results</h2>
-            <p className="text-xl text-gray-600">Celebrating our athletes&apos; achievements in diving</p>
+            <h2 className="text-4xl font-bold text-navy mb-4">Diving Results</h2>
+            <p className="text-xl text-gray-600">Celebrating our athletes&apos; achievements in high school and club diving</p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center border-gold hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-2">
-                <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
-                  <Trophy className="w-10 h-10 text-navy" />
-                </div>
-                <CardTitle className="text-4xl font-bold text-navy">39</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-xl font-semibold text-gray-700">Sectional Champions</p>
-                <p className="text-gray-500 mt-2">Local champions advancing to regionals</p>
-              </CardContent>
-            </Card>
 
-            <Card className="text-center border-gold hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-2">
-                <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
-                  <Award className="w-10 h-10 text-navy" />
-                </div>
-                <CardTitle className="text-4xl font-bold text-navy">102</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-xl font-semibold text-gray-700">Regional Qualifiers</p>
-                <p className="text-gray-500 mt-2">Regional qualifiers across Indiana</p>
-              </CardContent>
-            </Card>
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-navy text-center mb-8">High School</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                    <Trophy className="w-10 h-10 text-navy" />
+                  </div>
+                  <CardTitle className="text-4xl font-bold text-navy">39</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xl font-semibold text-gray-700">Sectional Champions</p>
+                  <p className="text-gray-500 mt-2">Local champions advancing to regionals</p>
+                </CardContent>
+              </Card>
 
-            <Card className="text-center border-gold hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-2">
-                <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
-                  <Target className="w-10 h-10 text-navy" />
-                </div>
-                <CardTitle className="text-4xl font-bold text-navy">38</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-xl font-semibold text-gray-700">State Qualifiers</p>
-                <p className="text-gray-500 mt-2">Elite divers competing at state level</p>
-              </CardContent>
-            </Card>
+              <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                    <Award className="w-10 h-10 text-navy" />
+                  </div>
+                  <CardTitle className="text-4xl font-bold text-navy">102</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xl font-semibold text-gray-700">Regional Qualifiers</p>
+                  <p className="text-gray-500 mt-2">Regional qualifiers across Indiana</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                    <Target className="w-10 h-10 text-navy" />
+                  </div>
+                  <CardTitle className="text-4xl font-bold text-navy">38</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xl font-semibold text-gray-700">State Qualifiers</p>
+                  <p className="text-gray-500 mt-2">Elite divers competing at state level</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-navy text-center mb-8">Club</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                    <Trophy className="w-10 h-10 text-navy" />
+                  </div>
+                  <CardTitle className="text-4xl font-bold text-navy">59</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xl font-semibold text-gray-700">USA Zones Qualifiers</p>
+                  <p className="text-gray-500 mt-2">Divers qualifying at USA zone championships</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                    <Award className="w-10 h-10 text-navy" />
+                  </div>
+                  <CardTitle className="text-4xl font-bold text-navy">21</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xl font-semibold text-gray-700">USA National Qualifiers</p>
+                  <p className="text-gray-500 mt-2">Divers advancing to USA national championships</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                    <Target className="w-10 h-10 text-navy" />
+                  </div>
+                  <CardTitle className="text-4xl font-bold text-navy">2</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xl font-semibold text-gray-700">National Finalists</p>
+                  <p className="text-gray-500 mt-2">Divers reaching national championship finals</p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>

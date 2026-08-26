@@ -419,95 +419,20 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
   /* Preserve circular shapes for icons and headshots */
   .rounded-full {
     border-radius: 9999px !important;
-  }
-  
-  /* Preserve specific icon dimensions */
-  .w-20.h-20,
-  .w-16.h-16,
-  .w-32.h-32 {
-    width: var(--tw-w) !important;
-    height: var(--tw-h) !important;
-    min-width: var(--tw-w) !important;
-    min-height: var(--tw-h) !important;
-    max-width: var(--tw-w) !important;
-    max-height: var(--tw-h) !important;
     aspect-ratio: 1 / 1 !important;
+    flex-shrink: 0 !important;
   }
-  
-  /* Preserve icon sizes within circles */
-  .w-10.h-10,
-  .w-8.h-8,
-  .w-16.h-16 {
-    width: var(--tw-w) !important;
-    height: var(--tw-h) !important;
-    min-width: var(--tw-w) !important;
-    min-height: var(--tw-h) !important;
-    max-width: var(--tw-w) !important;
-    max-height: var(--tw-h) !important;
+
+  .w-2.h-2.rounded-full {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    min-width: 0.5rem !important;
+    min-height: 0.5rem !important;
+    max-width: 0.5rem !important;
+    max-height: 0.5rem !important;
   }
-  
-  /* Ensure circular containers maintain shape */
-  .bg-gold.rounded-full,
-  .bg-gray-200.rounded-full {
-    border-radius: 9999px !important;
-    aspect-ratio: 1 / 1 !important;
-  }
-  
-  /* Override width constraints for circular elements */
-  .rounded-full {
-    width: auto !important;
-    max-width: none !important;
-    min-width: auto !important;
-  }
-  
-  /* Specific overrides for result cards and coach cards */
-  .text-center .rounded-full {
-    width: auto !important;
-    max-width: none !important;
-    min-width: auto !important;
-  }
-  
-  /* Preserve circular shapes for result cards */
-  .text-center .w-20.h-20.rounded-full {
-    width: 5rem !important;
-    height: 5rem !important;
-    min-width: 5rem !important;
-    min-height: 5rem !important;
-    max-width: 5rem !important;
-    max-height: 5rem !important;
-  }
-  
-  /* Preserve circular shapes for coach headshots */
-  .text-center .w-32.h-32.rounded-full {
-    width: 8rem !important;
-    height: 8rem !important;
-    min-width: 8rem !important;
-    min-height: 8rem !important;
-    max-width: 8rem !important;
-    max-height: 8rem !important;
-  }
-  
-  /* Preserve circular shapes for philosophy icons */
-  .text-center .w-16.h-16.rounded-full {
-    width: 4rem !important;
-    height: 4rem !important;
-    min-width: 4rem !important;
-    min-height: 4rem !important;
-    max-width: 4rem !important;
-    max-height: 4rem !important;
-  }
-  
-  /* Preserve icon sizes within circles */
-  .text-center .w-10.h-10 {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
-    min-width: 2.5rem !important;
-    min-height: 2.5rem !important;
-    max-width: 2.5rem !important;
-    max-height: 2.5rem !important;
-  }
-  
-  .text-center .w-8.h-8 {
+
+  .w-8.h-8.rounded-full {
     width: 2rem !important;
     height: 2rem !important;
     min-width: 2rem !important;
@@ -515,8 +440,17 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
     max-width: 2rem !important;
     max-height: 2rem !important;
   }
-  
-  .text-center .w-16.h-16 {
+
+  .w-12.h-12.rounded-full {
+    width: 3rem !important;
+    height: 3rem !important;
+    min-width: 3rem !important;
+    min-height: 3rem !important;
+    max-width: 3rem !important;
+    max-height: 3rem !important;
+  }
+
+  .w-16.h-16.rounded-full {
     width: 4rem !important;
     height: 4rem !important;
     min-width: 4rem !important;
@@ -524,11 +458,51 @@ button:focus, a:focus, input:focus, textarea:focus, select:focus {
     max-width: 4rem !important;
     max-height: 4rem !important;
   }
-  
-  /* Ensure all circular elements maintain aspect ratio */
-  .rounded-full {
-    aspect-ratio: 1 / 1 !important;
-    border-radius: 9999px !important;
+
+  .w-20.h-20.rounded-full {
+    width: 5rem !important;
+    height: 5rem !important;
+    min-width: 5rem !important;
+    min-height: 5rem !important;
+    max-width: 5rem !important;
+    max-height: 5rem !important;
+  }
+
+  .w-32.h-32.rounded-full {
+    width: 8rem !important;
+    height: 8rem !important;
+    min-width: 8rem !important;
+    min-height: 8rem !important;
+    max-width: 8rem !important;
+    max-height: 8rem !important;
+  }
+
+  /* Preserve icon sizes within circles */
+  .w-6.h-6 {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    min-width: 1.5rem !important;
+    min-height: 1.5rem !important;
+    max-width: 1.5rem !important;
+    max-height: 1.5rem !important;
+  }
+
+  .w-8.h-8:not(.rounded-full) {
+    width: 2rem !important;
+    height: 2rem !important;
+    min-width: 2rem !important;
+    min-height: 2rem !important;
+    max-width: 2rem !important;
+    max-height: 2rem !important;
+  }
+
+  .w-10.h-10 {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    min-width: 2.5rem !important;
+    min-height: 2.5rem !important;
+    max-width: 2.5rem !important;
+    max-height: 2.5rem !important;
   }
   
   /* Mobile navigation improvements */

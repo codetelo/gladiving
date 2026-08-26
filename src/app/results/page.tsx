@@ -7,12 +7,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Diving Results & Championships | GLAD Diving",
-  description: "GLAD diving results: 39 sectional champions, 102 regional qualifiers, 38 state qualifiers. Celebrating our high school divers' achievements in Indiana competitions.",
-  keywords: "diving results, diving championships, high school diving Indiana, sectional diving, state diving qualifiers, GLAD results",
+  description: "GLAD diving results: high school and club achievements including 39 sectional champions, 59 USA zones qualifiers, 21 national qualifiers, and 2 national finalists.",
+  keywords: "diving results, diving championships, high school diving Indiana, USA diving qualifiers, national diving finalists, GLAD results",
   alternates: { canonical: "/results" },
   openGraph: {
     title: "Diving Results & Championships | GLAD Diving",
-    description: "39 sectional champions, 102 regional qualifiers, 38 state qualifiers. Our divers' achievements in Indiana.",
+    description: "High school and club diving achievements from Greater Lafayette Area Diving.",
     url: "https://gladiving.com/results",
   },
 };
@@ -22,8 +22,14 @@ const divingResults = {
     sectionals: 39,
     regionals: 102,
     stateQualifiers: 38,
-    description: "Our high school divers consistently achieve excellence in springboard diving competitions across Indiana."
-  }
+    description: "Our high school divers consistently achieve excellence in springboard diving competitions across Indiana.",
+  },
+  club: {
+    zonesQualifiers: 59,
+    nationalQualifiers: 21,
+    nationalFinalists: 2,
+    description: "Our club divers consistently achieve excellence in USA Diving zone and national competitions.",
+  },
 };
 
 export default function ResultsPage() {
@@ -53,7 +59,7 @@ export default function ResultsPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center border-gold hover:shadow-lg transition-shadow">
               <CardHeader className="pb-4">
                 <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
@@ -102,12 +108,71 @@ export default function ResultsPage() {
         </div>
       </section>
 
+      {/* Club Results Summary */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-navy mb-4">Club Diving Results</h2>
+            <p className="text-xl text-gray-600 mb-8">
+              {divingResults.club.description}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-4">
+                <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                  <Trophy className="w-10 h-10 text-navy" />
+                </div>
+                <CardTitle className="text-4xl font-bold text-navy">
+                  {divingResults.club.zonesQualifiers}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xl font-semibold text-gray-700">USA Zones Qualifiers</p>
+                <p className="text-gray-500 mt-2">Divers qualifying at USA zone championships</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-4">
+                <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                  <Award className="w-10 h-10 text-navy" />
+                </div>
+                <CardTitle className="text-4xl font-bold text-navy">
+                  {divingResults.club.nationalQualifiers}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xl font-semibold text-gray-700">USA National Qualifiers</p>
+                <p className="text-gray-500 mt-2">Divers advancing to USA national championships</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-gold hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-4">
+                <div className="mx-auto w-20 h-20 bg-gold rounded-full flex items-center justify-center mb-4">
+                  <Target className="w-10 h-10 text-navy" />
+                </div>
+                <CardTitle className="text-4xl font-bold text-navy">
+                  {divingResults.club.nationalFinalists}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xl font-semibold text-gray-700">National Finalists</p>
+                <p className="text-gray-500 mt-2">Divers reaching national championship finals</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
 
 
 
 
       {/* Success Factors */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-navy mb-4">Keys to Our Success</h2>
