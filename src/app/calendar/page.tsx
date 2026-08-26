@@ -42,7 +42,7 @@ export default function CalendarPage() {
               {/* Desktop Calendar - Full iframe */}
               <div className="hidden md:block bg-white p-4 rounded border">
                 <iframe
-                  src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
+                  src="https://calendar.google.com/calendar/embed?src=9d8cddf83c17a113ae3c19e9e7103b0f77ac0fcaa7504cd70d9535dba4e7230d%40group.calendar.google.com&ctz=America%2FNew_York&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
                   style={{ border: 0 }}
                   width="100%"
                   height="800"
@@ -68,7 +68,7 @@ export default function CalendarPage() {
                   {/* Mobile Calendar Link */}
                   <div className="space-y-3">
                     <a
-                      href="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York&mode=AGENDA&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
+                      href="https://calendar.google.com/calendar/embed?src=9d8cddf83c17a113ae3c19e9e7103b0f77ac0fcaa7504cd70d9535dba4e7230d%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full bg-navy text-white text-center py-3 px-4 rounded-lg font-semibold hover:bg-navy-light transition-colors"
@@ -77,7 +77,7 @@ export default function CalendarPage() {
                     </a>
 
                     <a
-                      href="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York&mode=AGENDA&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
+                      href="https://calendar.google.com/calendar/embed?src=9d8cddf83c17a113ae3c19e9e7103b0f77ac0fcaa7504cd70d9535dba4e7230d%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full bg-gold text-navy text-center py-3 px-4 rounded-lg font-semibold hover:bg-gold-light transition-colors"
