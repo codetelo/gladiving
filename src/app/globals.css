@@ -606,12 +606,6 @@ iframe[title*="Calendar"] {
     transition: all 0.2s ease-in-out;
   }
   
-  /* Mobile calendar quick schedule */
-  .md\:hidden .bg-gray-50 {
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-  }
-  
   /* Mobile calendar text improvements */
   .md\:hidden .text-sm {
     font-size: 0.875rem;

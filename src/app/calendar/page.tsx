@@ -1,6 +1,4 @@
 import { Navigation } from "@/components/navigation";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy, Target, BookOpen } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -85,33 +83,6 @@ export default function CalendarPage() {
                       📱 Mobile Calendar View
                     </a>
                   </div>
-
-                  {/* Quick Event Preview */}
-                  <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-semibold text-navy mb-3">
-                      Quick Schedule
-                    </h4>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-600">Team Practice</span>
-                        <span className="font-medium">
-                          Mon, Wed, Fri 3-6 PM
-                        </span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-600">Pre Team Practice</span>
-                        <span className="font-medium">Tue, Thu 4-6 PM</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-600">Lessons</span>
-                        <span className="font-medium">Mon-Fri 5-6 PM</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-600">Saturday Practice</span>
-                        <span className="font-medium">9 AM - 12 PM</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -131,91 +102,8 @@ export default function CalendarPage() {
         </div>
       </section>
 
-      {/* Practice Schedule Summary */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy mb-4">
-              Regular Practice Schedule
-            </h2>
-            <p className="text-xl text-gray-600">
-              Weekly practice times for each diving program
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-gold hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-navy flex items-center space-x-2">
-                  <Trophy className="w-6 h-6 text-gold" />
-                  <span>Team</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>
-                    <strong>Monday, Wednesday, Friday:</strong> 3:00 PM - 6:00
-                    PM
-                  </p>
-                  <p>
-                    <strong>Saturday:</strong> 9:00 AM - 12:00 PM
-                  </p>
-                  <p>
-                    <strong>Location:</strong> Purdue Aquatic Center
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-gold hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-navy flex items-center space-x-2">
-                  <Target className="w-6 h-6 text-gold" />
-                  <span>Pre Team</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>
-                    <strong>Tuesday, Thursday:</strong> 4:00 PM - 6:00 PM
-                  </p>
-                  <p>
-                    <strong>Saturday:</strong> 10:00 AM - 12:00 PM
-                  </p>
-                  <p>
-                    <strong>Location:</strong> Purdue Aquatic Center
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-gold hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-navy flex items-center space-x-2">
-                  <BookOpen className="w-6 h-6 text-gold" />
-                  <span>Lessons</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>
-                    <strong>Monday - Friday:</strong> 5:00 PM - 6:00 PM
-                  </p>
-                  <p>
-                    <strong>Saturday:</strong> 11:00 AM - 12:00 PM
-                  </p>
-                  <p>
-                    <strong>Location:</strong> Purdue Aquatic Center
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Important Notes */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-navy mb-4">
